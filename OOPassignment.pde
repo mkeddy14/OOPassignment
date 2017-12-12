@@ -77,6 +77,9 @@ void draw()
    speed2.update();
    
    b1.render();
+   b2.render();
+   b3.render();
+   b4.render();
    
    barchart(); 
    
@@ -85,6 +88,36 @@ void draw()
      if(mousePressed == true)
      {
        b1.update();
+       
+     }
+    
+   }
+   
+   if(mouseX > 230 && mouseX < 270 && mouseY > 530 && mouseY < 570)
+   {
+     if(mousePressed == true)
+     {
+       b2.update();
+       
+     }
+    
+   }
+   
+   if(mouseX > 230 && mouseX < 270 && mouseY > 580 && mouseY < 620)
+   {
+     if(mousePressed == true)
+     {
+       b3.update();
+       
+     }
+    
+   }
+   
+   if(mouseX > 230 && mouseX < 270 && mouseY > 630 && mouseY < 670)
+   {
+     if(mousePressed == true)
+     {
+       b4.update();
        
      }
     
