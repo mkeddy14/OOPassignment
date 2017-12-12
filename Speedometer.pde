@@ -17,3 +17,9 @@ class Speedometer
     this.theta = 0;
     this.c = c;
   }
+  
+  void update()
+  {
+    theta += speed;
+  }
+  
