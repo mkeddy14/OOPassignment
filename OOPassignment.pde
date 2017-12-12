@@ -57,6 +57,12 @@ void draw()
   ellipse(760 , 550, 20,20);
   ellipse(760 , 600, 20,20);
   ellipse(760 , 650, 20,20);
+  textSize(32);
+  text("Statistics:", 625, 150);
+  text("Planet:", 200, 150);
+  stroke(255);
+  line(615, 155, 785, 155);
+  line(190, 155, 315, 155);
   
    radar1.render();
    radar1.update();
@@ -79,6 +85,7 @@ void draw()
      if(mousePressed == true)
      {
        b1.update();
+       
      }
     
    }
