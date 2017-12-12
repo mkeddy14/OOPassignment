@@ -18,3 +18,7 @@ class Speed2
     this.c = c;
   }
   
+  void update()
+  {
+    theta += speed;
+  }
