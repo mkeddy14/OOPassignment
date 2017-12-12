@@ -105,6 +105,14 @@ void draw()
      if(mousePressed == true)
      {
        b2.update();
+       textSize(20);
+       fill(255);
+       text("- Species: Alien", 615, 200);
+       text("- Population: Unknown", 615, 250);
+       text("- Radius: 3,390 km", 615, 300);
+       text("- Surface: Oxidized Iron Rocks", 615, 350);
+       textSize(40);
+       text("Mars", 200, 275);
        
      }
     
