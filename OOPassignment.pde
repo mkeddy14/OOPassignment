@@ -109,7 +109,7 @@ void draw()
        fill(255);
        text("- Species: Alien", 615, 200);
        text("- Population: Unknown", 615, 250);
-       text("- Radius: 3,390 km", 615, 300);
+       text("- Radius: 3,390km", 615, 300);
        text("- Surface: Oxidized Iron Rocks", 615, 350);
        textSize(40);
        text("Mars", 200, 275);
@@ -127,7 +127,7 @@ void draw()
        fill(255);
        text("- Species: Unknown", 615, 200);
        text("- Population: Unknown", 615, 250);
-       text("- Radius: 69,911 km", 615, 300);
+       text("- Radius: 69,911km", 615, 300);
        text("- Surface: Hydrogen & Helium Gas", 615, 350);
        textSize(40);
        text("Jupiter", 200, 275);
@@ -140,7 +140,14 @@ void draw()
      if(mousePressed == true)
      {
        b4.update();
-       
+       textSize(20);
+       fill(255);
+       text("- Species: Unknown", 615, 200);
+       text("- Population: Unknown", 615, 250);
+       text("- Radius: 58,232km", 615, 300);
+       text("- Surface: Hydrogen & Helium Gas", 615, 350);
+       textSize(40);
+       text("Saturn", 200, 275);
      }
     
    }
