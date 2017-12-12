@@ -88,7 +88,14 @@ void draw()
      if(mousePressed == true)
      {
        b1.update();
-       
+       textSize(20);
+       fill(255);
+       text("- Species: Human", 615, 200);
+       text("- Population: 7 Billion", 615, 250);
+       text("- Radius: 6,371km", 615, 300);
+       text("- Surface: 71% Water", 615, 350);
+       textSize(40);
+       text("Earth", 200, 275);
      }
     
    }
