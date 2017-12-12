@@ -5,6 +5,7 @@ void setup()
   speedometer1 = new Speedometer( width /2, height / 2, 25, 0.5, color(0, 255, 0));
   speed = new Speed2( width /2, height / 2, 25, 0.5, color(0, 255, 0));
   speed2 = new Speed3( width /2, height / 2, 25, 0.5, color(0, 255, 0));
+  b1 = new Button(250,500);
 }
 
 float cx = 500;
@@ -15,6 +16,7 @@ Radar radar1;
 Speedometer speedometer1;
 Speed2 speed;
 Speed3 speed2;
+Button b1;
 
 void draw()
 {
@@ -49,7 +51,6 @@ void draw()
   ellipse(250 , 550, 20,20);
   ellipse(250 , 600, 20,20);
   ellipse(250 , 650, 20,20);
-  
   ellipse(760 , 500, 20,20);
   ellipse(760 , 550, 20,20);
   ellipse(760 , 600, 20,20);
@@ -67,7 +68,19 @@ void draw()
    speed2.render();
    speed2.update();
    
+   b1.render();
+   
    barchart(); 
+   
+   if(mouseX > 230 && mouseX < 270 && mouseY > 480 && mouseY < 520)
+   {
+     if(mousePressed == true)
+     {
+       b1.update();
+     }
+    
+   }
+   
    
  }
  
