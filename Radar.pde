@@ -22,3 +22,20 @@ class Radar
   {
       theta += speed;
   }
+  
+  void render()
+  {
+    stroke(0);
+    noFill();
+    ellipse(cx, cy, radius * 2, radius * 2);
+    int trailLength = 3;
+    float greenIntensity = 255 / (float)trailLength;
+    for(int i = 0 ; i < trailLength ; i ++)
+    {
+      stroke(255,0,0);
+      float x = cx + sin(theta + i * speed) * radius;
+      float y = cy -cos(theta + i * speed) * radius;
+      line(cx, cy, x, y);
+    }
+  }
+}
