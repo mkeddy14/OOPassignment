@@ -123,7 +123,14 @@ void draw()
      if(mousePressed == true)
      {
        b3.update();
-       
+       textSize(20);
+       fill(255);
+       text("- Species: Unknown", 615, 200);
+       text("- Population: Unknown", 615, 250);
+       text("- Radius: 69,911 km", 615, 300);
+       text("- Surface: Hydrogen & Helium Gas", 615, 350);
+       textSize(40);
+       text("Jupiter", 200, 275);
      }
     
    }
