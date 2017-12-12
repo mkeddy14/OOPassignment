@@ -6,6 +6,9 @@ void setup()
   speed = new Speed2( width /2, height / 2, 25, 0.5, color(0, 255, 0));
   speed2 = new Speed3( width /2, height / 2, 25, 0.5, color(0, 255, 0));
   b1 = new Button(250,500);
+  b2 = new Button(250,550);
+  b3 = new Button(250,600);
+  b4 = new Button(250,650);
 }
 
 float cx = 500;
@@ -17,6 +20,9 @@ Speedometer speedometer1;
 Speed2 speed;
 Speed3 speed2;
 Button b1;
+Button b2;
+Button b3;
+Button b4;
 
 void draw()
 {
@@ -47,10 +53,6 @@ void draw()
   
   stroke(0);
   fill(255);
-  ellipse(250 , 500, 20,20);
-  ellipse(250 , 550, 20,20);
-  ellipse(250 , 600, 20,20);
-  ellipse(250 , 650, 20,20);
   ellipse(760 , 500, 20,20);
   ellipse(760 , 550, 20,20);
   ellipse(760 , 600, 20,20);

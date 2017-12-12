@@ -13,6 +13,9 @@ class Button
      stroke(0);
      fill(255);
      ellipse(x,y,20,20);
+     ellipse(250,550,20,20);
+     ellipse(250,600,20,20);
+     ellipse(250,650,20,20);
      
    }
    
