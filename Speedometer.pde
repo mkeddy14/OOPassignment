@@ -23,3 +23,20 @@ class Speedometer
     theta += speed;
   }
   
+    void render()
+  {
+    stroke(0);
+    fill(255);
+    ellipse(cx, cy, radius * 2, radius * 2);
+    int trailLength = 1;
+    for(int i = 0 ; i < trailLength ; i ++)
+    {
+      stroke(255,0,0);
+      float x = cx + sin(theta + i * speed) * radius;
+      float y = cy -cos(theta + i * speed) * radius;
+      line(cx, cy,x, y);
+      
+    }
+  }
+}
+  
