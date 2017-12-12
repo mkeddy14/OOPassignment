@@ -180,6 +180,7 @@ void draw()
       
       rect(ypos, xpos + i, xheight - scale, xwidth);
     
+      
   }
   
   rect(30, 450, 140, 235);
